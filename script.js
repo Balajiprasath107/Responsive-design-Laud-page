@@ -10,6 +10,8 @@ window.addEventListener('scroll',()=>{
     }
     lastscroll = currentscroll
 })
+
+
 let width = window.innerWidth
 const navbutton = document.getElementById('nav-button')
 const navlist = document.getElementById('navlist')
