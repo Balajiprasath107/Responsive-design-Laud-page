@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+body{
+    background-color: #1b1818;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#landing-page{
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+    padding-top: 45vh;
+}
+#header{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 4px;
+    color: #fff;
+    background-color: #1b1818;
+    text-align: end;
+}
+nav{
+    margin-top: 25px;
+    display: none;       
+}
+#navlist a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: end;
+}
+#nav-button{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background-color: #1b1818;
+    transition: opacity 0.15s;
+}
+.nav-line{
+    width: 22px;
+    height: 1px;
+    margin: 5px 2px;
+    background-color: #fff;
+}
+#nav-button:hover{
+    opacity: 0.5;
+}
+#nav-button:active{
+    opacity: 1;
+}
+.title{
+    font-size: 5vh;
+}
+#about{
+    background-color: #fff;
+    color: #5f5f5f;
+}
+#photo{
+    padding-top: 1rem;
+    text-align: center;
+}
+figcaption{
+    color: #1b1818;
+    font-size: 2vh;
+}
+img{
+    box-shadow: 0 0 5px #1b1818;
+}
+#info{
+    padding: 1.5rem 2rem;
+    line-height: 3vh;
+    text-align:left;
+}
+#section1{
+    margin-bottom: 3rem;
+}
+.rebel-poet, .Awesome-writer{
+    font-size: 3vh;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    color: #1b1818;
+}
+#btw{
+    text-align: center;
+    padding-bottom: 2rem;
+    background-color: #fff;
+}
+.wiki{
+    background-color: #909090;
+    font-size: 0.9rem;
+    font-weight: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.1rem;
+}
+.yt{
+    background-color: #ff9090;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.1rem;
+}
+.amazon{
+    background-color: #fdae10;
+    font-size: 0.9rem;
+    font-weight: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.1rem;
+}
+button{
+    transition: opacity 0.4s scale 0.2s ease;
+}
+button:hover{
+    opacity: 0.8;
+    scale: 0.95;
+}
+button:active{
+    opacity: 1;
+    scale: 0.99;
+}
+#quote{
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    color: #fff;
+}
+#award{
+    background-color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.line{
+    border-bottom: 0.1vh solid #606060;
+    height: 2.5vh;
+    text-align: center;
+
+}
+.heading{
+    font-size: 200%;
+    padding: 0 1vw;
+    background-color: #fff;
+}
+#cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#award-card{
+ 
+    height: 18vh;
+    width: 25vh;
+    padding-top: 1vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border: 1px solid #606060;
+    border-radius: 1vw;
+    box-shadow: 0 0 1px #606060;
+}
+.cardtitle{
+    text-align: left;
+    font-size: 3vh;
+}
+.year{
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5vh;
+    color: #909090;
+}
+.card-info{
+    font-size: 2vh;
+    margin-top: 1vh;
+    text-align: left;
+    color: #606060;
+}
+#poetry{
+    background-color: #fff;
+    padding: 2rem 1rem;
+    text-align: left;
+}
+.list{
+    padding: 3rem 1rem;
+    font-size: 2vh;
+    line-height: 3vh;
+}
+#footer{
+    color: #fff;
+    padding: 2rem 1rem;
+}
+#footerItem{
+    padding-bottom: 1rem;
+    padding-left: 1vh;
+    border-left: 1vw solid #606060;
+    margin-bottom: 1vh;
+}
+.footertitle{
+    font-size: 2vh;
+    font-weight: bold;
+}
+.titleinfo{
+    font-size: 1.5vh;
+    color: #606060;
+}
+
+.hidden{
+    visibility: hidden;
+    display: none;
+}
+.showmenu{
+    display: block;
+    visibility: visible;
+}
+
+
+
+
+
+
+@media (min-width:700px){
+    #header{ 
+        text-align: center;
+        vertical-align: middle;
+    }
+    nav{
+        margin-top: 0;
+        display: flex;       
+        align-items: space-between;
+        justify-content: center;
+    }
+    #navlist a{
+        display: inline;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        transition: scale 0.12s;
+    }
+    a:hover{
+        scale: 0.95;
+    }
+    a:active{
+        scale: 1;
+    }
+    #nav-button{
+        display: none;
+    }
+    #about{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 5vh 1vw;
+    }
+    #info{
+        font-size: 2vh;
+        margin-right: auto;
+        margin-left: auto;
+        width: 30%;
+    }
+    #photo{
+        margin-right: auto;
+        margin-left: 1vw;
+        margin-top: 5vh;
+    }
+    img{
+        height: 50vh;
+    }
+    #quote{
+        padding: 5vh;
+    }
+    #cards{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5vh;
+        align-items: center;
+        justify-content: center;
+    }
+    #award-card{
+        margin-left: 5vw;
+        border-radius: 1vh;
+    }
+    .cardtitle{
+        font-size: 1.2rem;
+    }
+    .year{
+        font-size: 1rem;
+    }
+    .card-info{
+        font-size: 0.7em;
+        margin-top: 1vh;
+    }
+    #poetry{
+        display: flex;
+        justify-content: center;
+        gap: 5vw;
+    }
+    #poetry .line{
+        width: 30vw;
+    }
+    #footer{
+        display: flex;
+        justify-content: center;
+    }
+    #footerItem{
+        border-left: none;
+        border-right: 2px solid #606060;
+        width: 20vw;
+        margin-left: 2vh;
+    }
+    .heading{
+        font-size: 4vh;
+    }
+    
+    
+}
